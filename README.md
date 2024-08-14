@@ -1,30 +1,27 @@
-# React + TypeScript + Vite
+# Visão geral da referência do React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A documentação de referência do React é dividida em subseções funcionais:
 
-Currently, two official plugins are available:
+- React@18.3.1
+- React-dom@18.3.1
+- Regras do React
+- APIs Legadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## React
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Hooks
+- Componentes
+- APIs
+- Diretivas
 
-- Configure the top-level `parserOptions` property like this:
+### Hooks
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- `useState`: permite adicionar e gerenciar estado em componentes funcionais. [Exemplo.]()
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- `useReducer`: oferece uma maneira alternativa de gerencia estados complexos em componentes funcionais. Ele é particularmente útil quando o estado envolve múltiplos valores ou quando a lógica de atualização do estado é mais complexa, como quando diferentes ações precisam manipular o estado de maneira distintas. [Exemplo.]()
+
+- `useContext`: permite acessar o valor de um contexto em qualquer componente funcional. Ele é utilizado para compartilhar dados ou estados entre componentes sem precisar passar props manualmente em cada nível da árvore de componentes. [Exemplo.]()
+
+- `useRef`: serve para criar uma referência mutável que persiste durante o ciclo de vida completo de um componente. Ele é comumente utilizado para acessar diretamente elementos DOM ou armazenar valores mutáveis que não provocam re-renderizações quando atualizados. [Exemplo.]()
